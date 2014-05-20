@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
     s.source = { :git => 'https://github.com/gaoyz/DomobAdWallSDK.git', :tag => '1.0.5' }
     s.description = "iOS SDK for Domob AdWall"
     s.platform = :ios
-    s.source_files = '*.h','Header/*.h','Header/UI/*.h','Classes/Contollers/*.h','Classes/Controls/*.h','Classes/Controls/HMSegmentedControl/*.h','Classes/Controls/SDWebImage/*.h','Classes/Utils/*.h'
+    s.source_files = '*.h','Header/*.h','Header/UI/*.h'
     s.preserve_paths = '*.a'
-    s.libraries = 'DomobAdWallCoreSDK'
+    s.libraries = 'DomobAdWallCoreSDK+UI'
     s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/DomobAdWallSDK"' }
     s.frameworks = 'CFNetwork', 'CoreTelephony', 'MessageUI', 'Security', 'SystemConfiguration', 'CoreGraphics'
     s.weak_frameworks = 'AdSupport', 'StoreKit'
